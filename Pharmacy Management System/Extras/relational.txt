@@ -1,0 +1,13 @@
+             Relational Model for Pharmacy Management System
+
+►  add_to_cart (User_id, Item_id, Price)
+►  ayurvedic_med (AM_id, AM_name, Man_name, Type, Self_loc, Price)
+►  bill (Pay_id, Mode, Amount)
+►  care_products (C_id, CP_name, Manu_name, Self_loc, Price)
+►  customer (Customer_id, Customer_fn, Customer_ln, Email_id, Contact_no, Gender)
+►  general_items (GItem_id, GItem_name, Manu_name, Self_loc, Price)
+►  hospital (Hospital_id, Hospital_name, R_name, R_id, Email_id, Contact_no, Gender)
+►  inventory (ID, Available, Sold, Exp_date)
+►  medicine (Medicine_id, M_name, Manu_name, Type, Self_loc, Price, Prescription)
+►  prescription_details (Pres_no, Doc_regno, Doc_name, Doc_address, Medicine, Customer_id)
+►  surgical_products (SP_id, S_name, Man_name, Self_loca, Price)

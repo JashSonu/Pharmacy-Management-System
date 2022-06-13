@@ -1,0 +1,30 @@
+CREATE TABLE `pharmacy`.`prescribed` (
+  `Medicine_id` VARCHAR(10) NOT NULL,
+  `Pres_no` VARCHAR(10) NULL,
+  `M_name` VARCHAR(80) NULL,
+  `Manu_name` VARCHAR(80) NULL,
+  `Type` VARCHAR(45) NULL,
+  `Self_loc` VARCHAR(45) NULL,
+  `Price` INT NULL,
+  `Prescription` VARCHAR(45) NULL,
+  PRIMARY KEY (`Medicine_id`));
+
+
+CREATE TABLE `pharmacy`.`over_the_counter` (
+  `Medicine_id` VARCHAR(10) NOT NULL,
+  `M_name` VARCHAR(45) NOT NULL,
+  `Manu_name` VARCHAR(45) NOT NULL,
+  `Type` VARCHAR(45) NOT NULL,
+  `Self_loc` VARCHAR(45) NOT NULL,
+  `Price` INT NOT NULL,
+  PRIMARY KEY (`Medicine_id`));
+
+
+CREATE TABLE `pharmacy`.`customer_buys_products` (
+  `Customer_id` VARCHAR(10) NOT NULL,
+  `ID` VARCHAR(45) NOT NULL);
+
+
+CREATE TABLE `pharmacy`.`hospital_buys_products` (
+  `Hospital_id` VARCHAR(10) NOT NULL,
+  `ID` VARCHAR(45) NOT NULL);
